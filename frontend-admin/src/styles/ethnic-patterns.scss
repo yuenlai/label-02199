@@ -1,0 +1,248 @@
+// ===== 民族文化装饰元素 =====
+// 极简壮锦纹理、铜鼓纹样等（非大面积堆砌）
+
+// === 壮锦纹理边框 ===
+// 用于卡片边框装饰，极简线条风格
+.ethnic-border {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: repeating-linear-gradient(
+      90deg,
+      #1A535C 0px,
+      #1A535C 8px,
+      transparent 8px,
+      transparent 12px,
+      #FF6B6B 12px,
+      #FF6B6B 20px,
+      transparent 20px,
+      transparent 24px
+    );
+  }
+}
+
+// === 壮锦纹理底部边框 ===
+.ethnic-border-bottom {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: repeating-linear-gradient(
+      90deg,
+      #1A535C 0px,
+      #1A535C 8px,
+      transparent 8px,
+      transparent 12px,
+      #FF6B6B 12px,
+      #FF6B6B 20px,
+      transparent 20px,
+      transparent 24px
+    );
+  }
+}
+
+// === 标题栏壮锦装饰 ===
+.ethnic-title-decoration {
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(to bottom, #1A535C, #FF6B6B);
+    border-radius: 2px;
+  }
+}
+
+// === 铜鼓纹样分隔线 ===
+.ethnic-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #DFE6E9 20%,
+      #DFE6E9 80%,
+      transparent
+    );
+  }
+
+  .ethnic-divider__icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A535C;
+    font-size: 14px;
+  }
+}
+
+// === 卡片民族纹理背景 ===
+// 极简菱形纹，用作卡片 hover 背景装饰
+.ethnic-pattern-bg {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0.04;
+    background-image:
+      linear-gradient(45deg, #1A535C 25%, transparent 25%),
+      linear-gradient(-45deg, #1A535C 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #1A535C 75%),
+      linear-gradient(-45deg, transparent 75%, #1A535C 75%);
+    background-size: 12px 12px;
+    background-position: 0 0, 0 6px, 6px -6px, -6px 0px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::after {
+    opacity: 0.08;
+  }
+}
+
+// === 绣球装饰圆点 ===
+.ethnic-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF6B6B;
+  margin: 0 4px;
+}
+
+// === 风雨桥样式的标题装饰 ===
+.ethnic-header {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: #1A535C;
+    border-radius: 2px;
+    clip-path: polygon(
+      0 0, 10% 100%, 20% 0, 30% 100%, 40% 0, 50% 100%,
+      60% 0, 70% 100%, 80% 0, 90% 100%, 100% 0
+    );
+  }
+}
+
+// === 壮锦纹理卡片 ===
+.ethnic-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #DFE6E9;
+  box-shadow: 0 2px 8px rgba(26, 83, 92, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // 顶部壮锦纹理条
+  &::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      #1A535C 0px,
+      #1A535C 6px,
+      #F7FFF7 6px,
+      #F7FFF7 8px,
+      #FF6B6B 8px,
+      #FF6B6B 14px,
+      #F7FFF7 14px,
+      #F7FFF7 16px
+    );
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(26, 83, 92, 0.15);
+  }
+}
+
+// === 银饰风格的分割线 ===
+.silver-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #B2BEC3 15%,
+    #DFE6E9 50%,
+    #B2BEC3 85%,
+    transparent 100%
+  );
+  margin: 16px 0;
+}
+
+// === 民族特色标签 ===
+.ethnic-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid;
+
+  &--zhuang {
+    color: #1A535C;
+    border-color: rgba(26, 83, 92, 0.3);
+    background: rgba(26, 83, 92, 0.06);
+  }
+
+  &--yao {
+    color: #E04B4B;
+    border-color: rgba(255, 107, 107, 0.3);
+    background: rgba(255, 107, 107, 0.06);
+  }
+
+  &--miao {
+    color: #2DB5A8;
+    border-color: rgba(78, 205, 196, 0.3);
+    background: rgba(78, 205, 196, 0.06);
+  }
+
+  &--dong {
+    color: #C5A100;
+    border-color: rgba(255, 230, 109, 0.3);
+    background: rgba(255, 230, 109, 0.08);
+  }
+}

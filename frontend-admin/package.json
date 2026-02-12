@@ -1,0 +1,30 @@
+{
+  "name": "gx-culture-heritage-platform",
+  "private": true,
+  "version": "1.0.0",
+  "description": "广西少数民族文化遗产数字化保护与展示平台",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "pinia": "^2.1.7",
+    "element-plus": "^2.6.1",
+    "@element-plus/icons-vue": "^2.3.1",
+    "vue-i18n": "^9.10.2",
+    "three": "^0.162.0",
+    "@vueuse/core": "^10.9.0",
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.6",
+    "sass": "^1.71.1",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0"
+  }
+}
