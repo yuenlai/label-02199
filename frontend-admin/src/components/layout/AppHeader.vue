@@ -102,7 +102,7 @@
           <el-input v-model="loginForm.password" type="password" show-password :placeholder="t('login.passwordPlaceholder')" :prefix-icon="Lock" @keyup.enter="handleLogin" />
         </el-form-item>
       </el-form>
-      <div class="login-hint">{{ t('login.hint') }}</div>
+
       <template #footer>
         <el-button @click="loginDialogVisible = false">{{ t('common.cancel') }}</el-button>
         <el-button type="primary" :loading="loginLoading" @click="handleLogin">{{ t('nav.login') }}</el-button>
@@ -288,22 +288,11 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   white-space: nowrap;
 }
 
-.login-hint {
-  margin-top: 8px;
-  font-size: 12px;
-  color: #909399;
-  line-height: 1.6;
-}
+
 </style>
 
 <style lang="scss">
 /* 登录弹框样式 - 非 scoped，因为 dialog 通过 Teleport 挂载到 body */
-.el-dialog .login-hint {
-  margin-top: 8px;
-  font-size: 12px;
-  color: #909399;
-  line-height: 1.6;
-}
 
 /* 弹出菜单 - 遮罩层 */
 .mobile-menu-overlay {

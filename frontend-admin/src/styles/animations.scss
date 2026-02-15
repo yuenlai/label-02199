@@ -2,11 +2,9 @@
 // 遵循「自然、轻量化、不喧宾夺主」原则
 
 // === 资源卡片逐项淡入动画 ===
-// opacity 从 0 到 1，配合 Y 轴 5px 微动
+// 使用 animation 实现从下方淡入，不设初始 opacity:0 避免与页面切换过渡冲突
 .fade-in-up {
-  opacity: 0;
-  transform: translateY(5px);
-  animation: fadeInUp 0.4s ease forwards;
+  animation: fadeInUp 0.4s ease both;
 }
 
 @for $i from 1 through 20 {
@@ -16,6 +14,10 @@
 }
 
 @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -24,12 +26,14 @@
 
 // === 从左淡入 ===
 .fade-in-left {
-  opacity: 0;
-  transform: translateX(-10px);
-  animation: fadeInLeft 0.4s ease forwards;
+  animation: fadeInLeft 0.4s ease both;
 }
 
 @keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -38,12 +42,14 @@
 
 // === 从右淡入 ===
 .fade-in-right {
-  opacity: 0;
-  transform: translateX(10px);
-  animation: fadeInRight 0.4s ease forwards;
+  animation: fadeInRight 0.4s ease both;
 }
 
 @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -52,11 +58,13 @@
 
 // === 纯淡入 ===
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 0.4s ease forwards;
+  animation: fadeIn 0.4s ease both;
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }

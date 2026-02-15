@@ -47,7 +47,7 @@
             >
               <div class="post-header">
                 <div class="post-author">
-                  <el-avatar :size="40" :src="post.avatar">{{ post.author[0] }}</el-avatar>
+                  <el-avatar :size="40" :src="post.avatar">{{ l(post.author).charAt(0) }}</el-avatar>
                   <div class="author-info">
                     <span class="author-name">{{ l(post.author) }}</span>
                     <span class="post-time">{{ post.time }}</span>
@@ -91,7 +91,7 @@
             <h3 class="ethnic-title-decoration">{{ t('community.activeUsers') }}</h3>
             <div class="active-users">
               <div v-for="user in activeUsers" :key="user.name" class="user-item">
-                <el-avatar :size="32">{{ user.name[0] }}</el-avatar>
+                <el-avatar :size="32" :src="user.avatar">{{ user.name[0] }}</el-avatar>
                 <div class="user-info">
                   <span class="user-name">{{ user.name }}</span>
                   <span class="user-posts">{{ user.posts }} {{ t('community.postsUnit') }}</span>
@@ -111,6 +111,7 @@ import { useI18n } from 'vue-i18n'
 import { Star, ChatDotRound, Share } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { communityPosts } from '@/utils/mockData'
+import { communityAvatars } from '@/utils/imageUrls'
 import { useLocaleData } from '@/composables/useLocaleData'
 import { useUserStore } from '@/store'
 
@@ -138,11 +139,11 @@ const filteredPosts = computed(() => {
 })
 
 const activeUsers = [
-  { name: '壮锦爱好者', posts: 28 },
-  { name: '侗歌迷', posts: 22 },
-  { name: '非遗小白', posts: 18 },
-  { name: '研学带队老师', posts: 15 },
-  { name: '苗银工匠', posts: 12 }
+  { name: '壮锦爱好者', posts: 28, avatar: communityAvatars['壮锦爱好者'] },
+  { name: '侗歌迷', posts: 22, avatar: communityAvatars['侗歌迷'] },
+  { name: '非遗小白', posts: 18, avatar: communityAvatars['非遗小白'] },
+  { name: '研学带队老师', posts: 15, avatar: communityAvatars['研学带队老师'] },
+  { name: '苗银工匠', posts: 12, avatar: communityAvatars['苗银工匠'] }
 ]
 
 const submitPost = () => {
@@ -155,7 +156,7 @@ const submitPost = () => {
     posts.value.unshift({
       id: Date.now(),
       author: userStore.isLoggedIn ? userStore.userInfo.name : t('common.explorer'),
-      avatar: '',
+      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop&crop=face',
       title: newPost.title,
       content: newPost.content,
       likes: 0,
