@@ -115,7 +115,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { HomeFilled, Grid, View, User, Goods, ChatDotRound, Operation, Close, SwitchButton, Lock } from '@element-plus/icons-vue'
+import { HomeFilled, Grid, View, User, Goods, Operation, Close, SwitchButton, Lock } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import LanguageSwitcher from '@/components/common/LanguageSwitcher.vue'
 import { useUserStore } from '@/store'
@@ -144,8 +144,7 @@ const navItems = [
   { path: '/resources', label: 'nav.resources', icon: 'Grid' },
   { path: '/virtual-tour', label: 'nav.virtualTour', icon: 'View' },
   { path: '/inheritors', label: 'nav.inheritors', icon: 'User' },
-  { path: '/products', label: 'nav.products', icon: 'Goods' },
-  { path: '/community', label: 'nav.community', icon: 'ChatDotRound' }
+  { path: '/products', label: 'nav.products', icon: 'Goods' }
 ]
 
 const handleScroll = () => {

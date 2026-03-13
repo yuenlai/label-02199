@@ -42,12 +42,6 @@ const routes = [
         meta: { title: '文创产品' }
       },
       {
-        path: '/community',
-        name: 'Community',
-        component: () => import('@/views/UserInteraction.vue'),
-        meta: { title: '用户互动' }
-      },
-      {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
         component: () => import('@/views/NotFound.vue'),

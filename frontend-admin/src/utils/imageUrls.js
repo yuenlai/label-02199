@@ -66,16 +66,6 @@ export const productImages = {
   '侗族大歌主题T恤': 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop'
 }
 
-// ===== 社区用户头像 =====
-export const communityAvatars = {
-  '壮锦爱好者': 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop&crop=face',
-  '非遗小白': 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=80&h=80&fit=crop&crop=face',
-  '瑶族文化探索者': 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=face',
-  '侗歌迷': 'https://images.unsplash.com/photo-1599566150163-29194dcabd9c?w=80&h=80&fit=crop&crop=face',
-  '研学带队老师': 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=80&h=80&fit=crop&crop=face',
-  '苗银工匠': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face'
-}
-
 // ===== 虚拟漫游场景封面 =====
 export const tourCovers = {
   '壮族村寨': 'https://images.unsplash.com/photo-1528164344705-47542687000d?w=640&h=360&fit=crop',
