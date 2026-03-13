@@ -8,7 +8,7 @@ export default {
     virtualTour: '3D虚拟漫游',
     inheritors: '非遗传承人',
     products: '文创产品',
-    community: '用户互动',
+
     search: '搜索文化资源...',
     login: '登录',
     register: '注册',
@@ -170,25 +170,7 @@ export default {
     addToCart: '加入购物车',
     viewDetail: '查看详情'
   },
-  community: {
-    title: '文化交流社区',
-    subtitle: '分享你的文化发现与感悟',
-    tabs: {
-      discussions: '话题讨论',
-      shares: '资源分享',
-      activities: '活动公告'
-    },
-    post: '发布话题',
-    postTitlePlaceholder: '输入话题标题',
-    postContentPlaceholder: '分享你的文化发现与感悟...',
-    replyPlaceholder: '写下你的回复...',
-    hotTopics: '热门话题',
-    activeUsers: '活跃用户',
-    postsUnit: '篇',
-    like: '点赞',
-    reply: '回复',
-    share: '转发'
-  },
+
   footer: {
     about: '关于平台',
     aboutDesc: '广西少数民族文化遗产数字化保护与展示平台致力于利用数字化技术，保护和传承广西壮、瑶、苗、侗等少数民族的优秀传统文化遗产。',

@@ -8,7 +8,7 @@ export default {
     virtualTour: '3D Virtual Tour',
     inheritors: 'Inheritors',
     products: 'Cultural Products',
-    community: 'Community',
+
     search: 'Search cultural resources...',
     login: 'Login',
     register: 'Register',
@@ -170,25 +170,7 @@ export default {
     addToCart: 'Add to Cart',
     viewDetail: 'View Details'
   },
-  community: {
-    title: 'Cultural Exchange Community',
-    subtitle: 'Share your cultural discoveries and reflections',
-    tabs: {
-      discussions: 'Discussions',
-      shares: 'Resource Sharing',
-      activities: 'Activities'
-    },
-    post: 'New Topic',
-    postTitlePlaceholder: 'Enter topic title',
-    postContentPlaceholder: 'Share your cultural discoveries and reflections...',
-    replyPlaceholder: 'Write your reply...',
-    hotTopics: 'Hot Topics',
-    activeUsers: 'Active Users',
-    postsUnit: 'posts',
-    like: 'Like',
-    reply: 'Reply',
-    share: 'Share'
-  },
+
   footer: {
     about: 'About Platform',
     aboutDesc: 'The Guangxi Ethnic Minority Cultural Heritage Digital Platform is dedicated to preserving and inheriting the outstanding traditional cultural heritage of Zhuang, Yao, Miao, Dong and other ethnic minorities through digital technology.',
