@@ -45,8 +45,7 @@ const quickLinks = [
   { path: '/resources', label: 'nav.resources' },
   { path: '/virtual-tour', label: 'nav.virtualTour' },
   { path: '/inheritors', label: 'nav.inheritors' },
-  { path: '/products', label: 'nav.products' },
-  { path: '/community', label: 'nav.community' }
+  { path: '/products', label: 'nav.products' }
 ]
 </script>
 

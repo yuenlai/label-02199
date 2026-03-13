@@ -9,7 +9,7 @@ export default {
     virtualTour: '3D Youz Lamj',
     inheritors: 'Cwnzcenz Vunz',
     products: 'Vwnzcouh Canjbinj',
-    community: 'Gujdungh',
+
     search: 'Cwmj caikliuz vwnzva...',
     login: 'Daengj Lwg',
     register: 'Cawx Mingz',
@@ -171,25 +171,7 @@ export default {
     addToCart: 'Gya Goucez',
     viewDetail: 'Yawj Sihcing'
   },
-  community: {
-    title: 'Vwnzva Gaujliuz Sezgih',
-    subtitle: 'Fenhyangh mwngz guh vwnzva fathienz caeuq gamjvuj',
-    tabs: {
-      discussions: 'Vajdij Doihlwnz',
-      shares: 'Caikliuz Fenhyangh',
-      activities: 'Hodungh Gunghgauq'
-    },
-    post: 'Fabiu Vajdij',
-    postTitlePlaceholder: 'Suj vajdij biujdij',
-    postContentPlaceholder: 'Fenhyangh mwngz guh vwnzva fathienz caeuq gamjvuj...',
-    replyPlaceholder: 'Sij mwngz guh veijfug...',
-    hotTopics: 'Yit Vajdij',
-    activeUsers: 'Hodungh Yunghhoz',
-    postsUnit: 'bienz',
-    like: 'Diemj Canj',
-    reply: 'Veizfug',
-    share: 'Cwnzfat'
-  },
+
   footer: {
     about: 'Guanqyiz Bingzdaiz',
     aboutDesc: 'Gvangjsih Saujsou Minzcuz Vwnzva Yicanj Soujmaz Bauzhoj Caeuq Canjsi Bingzdaiz coihlig leihyungh soujmaz gihsuz, bauzhoj caeuq cwnzcenz Gvangjsih Bouxcuengh, Bouxyauz, Bouxyouz, Bouxgaeml daengj saujsou minzcuz guh youliz cwnztungz vwnzva yicanj.',

@@ -5,7 +5,7 @@
 
 import {
   resourceCovers, inheritorAvatars, workImages,
-  productImages, communityAvatars, tourCovers, hotspotImages
+  productImages, tourCovers, hotspotImages
 } from './imageUrls'
 
 // ========== 文化资源列表 (12条) ==========
@@ -265,17 +265,6 @@ export const products = [
   { id: 6, name: { zh: '广西非遗数字藏品', en: 'Guangxi Heritage Digital Collectible', za: 'Gvangjsih Feiyiz Soujmaz Cangzbinj' }, category: 'digital', price: 29.9, image: productImages['广西非遗数字藏品'], description: { zh: '区块链数字藏品，收录壮锦、侗族大歌等非遗IP，限量发行。', en: 'Blockchain digital collectible featuring heritage IPs, limited edition.', za: 'Gihgvaijlienz soujmaz cangzbinj.' }, ethnicity: 'zhuang' },
   { id: 7, name: { zh: '瑶族蜡染帆布包', en: 'Yao Batik Canvas Bag', za: 'Bouxyauz Laznyaemj Fanzbouh Bauj' }, category: 'accessories', price: 198, image: productImages['瑶族蜡染帆布包'], description: { zh: '瑶族蜡染工艺帆布包，蓝白纹样，文艺清新。', en: 'Yao batik canvas bag with blue-white patterns.', za: 'Bouxyauz laznyaemj gunghneih fanzbouh bauj.' }, ethnicity: 'yao' },
   { id: 8, name: { zh: '侗族大歌主题T恤', en: 'Dong Grand Song T-Shirt', za: 'Bouxgaeml Daihgoj Cujdij T-suz' }, category: 'clothing', price: 89, image: productImages['侗族大歌主题T恤'], description: { zh: '侗族大歌元素设计T恤，棉质舒适，支持非遗传承。', en: 'T-shirt designed with Dong Grand Song elements.', za: 'Bouxgaeml Daihgoj yenzsuz seihgeih T-suz.' }, ethnicity: 'dong' }
-]
-
-
-// ========== 社区帖子列表 (6条) ==========
-export const communityPosts = [
-  { id: 1, author: { zh: '壮锦爱好者', en: 'Brocade Enthusiast', za: 'Cuenghgim Ngaijhauj Cej' }, avatar: communityAvatars['壮锦爱好者'], title: { zh: '周末去宾阳拜访韦金凤老师，收获满满！', en: 'Visited Master Wei Jinfeng in Binyang this weekend, so rewarding!', za: 'Ciuhmoeg bae Binhyangz baijfangh Veiz Gimfungh laujsih!' }, content: { zh: '终于见到了仰慕已久的韦老师，她手把手教了我基础的织锦技法，还送了我一块小样。壮锦真的太美了，每一针都是匠心。', en: 'Finally met the admired Master Wei. She taught me basic weaving techniques hands-on and gave me a sample.', za: 'Cungqyuz gienz dauq yij giu yangzmuj guh Veiz laujsih.' }, likes: 128, replies: 23, time: '2025-02-10 14:32', type: 'shares' },
-  { id: 2, author: { zh: '非遗小白', en: 'Heritage Newbie', za: 'Feiyiz Siujbaek' }, avatar: communityAvatars['非遗小白'], title: { zh: '想入门学习壮族文化，应该从哪里开始？', en: 'Want to start learning Zhuang culture, where should I begin?', za: 'Siengj hawj mwnz hag Bouxcuengh vwnzva?' }, content: { zh: '对广西少数民族文化很感兴趣，想系统了解一下，各位前辈有什么推荐的学习路径或书籍吗？', en: 'Very interested in Guangxi ethnic minority culture. Looking for systematic learning paths or book recommendations.', za: 'Dwg Gvangjsih saujsou minzcuz vwnzva hen gamj hingqcuj.' }, likes: 45, replies: 18, time: '2025-02-09 20:15', type: 'discussions' },
-  { id: 3, author: { zh: '瑶族文化探索者', en: 'Yao Culture Explorer', za: 'Bouxyauz Vwnzva Damqsoh Cej' }, avatar: communityAvatars['瑶族文化探索者'], title: { zh: '贺州盘王节活动招募志愿者', en: 'Hezhou Pan Wang Festival seeking volunteers', za: 'Hocouh Banzvangh Ciet hodungh caujmuj cihyenz cej' }, content: { zh: '今年盘王节定在11月中旬，需要招募20名志愿者协助活动筹备。欢迎大家报名！', en: 'This year\'s Pan Wang Festival is set for mid-November. We need 20 volunteers to help with preparations.', za: 'Gim nienz Banzvangh Ciet dingh youq 11 nyied cunghswnh.' }, likes: 89, replies: 35, time: '2025-02-09 09:00', type: 'activities' },
-  { id: 4, author: { zh: '侗歌迷', en: 'Dong Song Fan', za: 'Bouxgaeml Goj Miz' }, avatar: communityAvatars['侗歌迷'], title: { zh: '三江侗族大歌演出资讯', en: 'Sanjiang Dong Grand Song performance info', za: 'Samgyangh Bouxgaeml Daihgoj yenjok cihswnh' }, content: { zh: '分享一组上周在三江听的侗族大歌现场照片，天籁之音名不虚传！建议有机会一定要去现场感受。', en: 'Sharing photos from last week\'s Dong Grand Song live performance in Sanjiang. Highly recommend!', za: 'Fenhyangh it cuz swngh ciuh youq Samgyangh dingh guh Bouxgaeml Daihgoj yienjcangh caujbienz.' }, likes: 256, replies: 42, time: '2025-02-08 16:45', type: 'shares' },
-  { id: 5, author: { zh: '研学带队老师', en: 'Study Tour Teacher', za: 'Yenzhag Daihdui Laujsih' }, avatar: communityAvatars['研学带队老师'], title: { zh: '讨论：如何让青少年更好地参与非遗传承？', en: 'Discussion: How to better engage youth in heritage preservation?', za: 'Doihlwnz: Yungznauh hawj cinghsaujnienz lai ndei camgya feiyiz cwnzcenz?' }, content: { zh: '带学生参加过几次非遗研学，发现孩子们对动手体验很感兴趣，但对理论部分容易走神。大家有什么好的教学方法？', en: 'After several heritage study tours, I found kids love hands-on experiences but lose focus during theory.', za: 'Dai hagswng camgya gvaq gij ciz feiyiz yenzhag.' }, likes: 67, replies: 29, time: '2025-02-08 11:20', type: 'discussions' },
-  { id: 6, author: { zh: '苗银工匠', en: 'Miao Silver Artisan', za: 'Bouxyouz Ngaenz Gunghcangh' }, avatar: communityAvatars['苗银工匠'], title: { zh: '融水芦笙节摄影展征稿', en: 'Rongshui Lusheng Festival photo exhibition call for entries', za: 'Yunghsuj Luzswngh Ciet sebying canj cinghgauj' }, content: { zh: '今年芦笙节将同步举办"芦笙节印象"摄影展，现面向大家征集作品。优秀作品将有机会在县文化馆展出。', en: 'This year\'s Lusheng Festival will host a photo exhibition. We\'re collecting submissions.', za: 'Gim nienz Luzswngh Ciet ciang dungzbouh gvejbanj sebying canj.' }, likes: 112, replies: 15, time: '2025-02-07 15:30', type: 'activities' }
 ]
 
 
